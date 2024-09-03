@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore top-quality, fashionable apparel for men and women. Discover our exclusive deals on the latest trends at YourBrandName. Shop now!">
+    <meta name="keywords" content="men's clothing, women's clothing, fashion apparel, trendy outfits, YourBrandName">
+    <link rel="icon" href="Images/fav-icon.png"> <!-- Website Icon -->
+    <script src="https://cdn.tailwindcss.com"></script> <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/css/tw-elements.min.css"/> <!-- Tailwind Elements Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> <!-- FontAwesome Icons Import -->
+    <link rel="stylesheet" href="CSS/input.css"> <!-- Main CSS File -->
+    <title>E-Commerce</title>
+</head>
+<body>
+    <!-- Wrapper -->
+    <div class="wrapper">
+        <section class="home-section">
+            <header class="main-header w-full flex items-center justify-between fixed z-40 shadow-lg py-4 main-padding">
+                <div class="main-logo">
+                    <a href="index.html">
+                        <img src="Images/logo.png" alt="website-logo" width="140px" height="40px">
+                    </a>
+                </div>
+                <nav class="main-navbar flex items-center gap-4 lg:gap-8">
+                    <div class="navbar-div">
+                        <ul class="flex items-center gap-4 lg:gap-8 relative" id="navbar">
+                            <div class="x-mark-icon transition-all duration-200">
+                                <button type="button">
+                                    <i class="fa-solid fa-xmark text-3xl"></i>
+                                </button>
+                            </div>
+                            <li>
+                                <a href="index.html" class="flex items-center justify-center overflow-hidden relative text-lg font-bold text-neutral-600 transition-all duration-200">Home</a>
+                            </li>
+                            <li>
+                                <a href="shop.html" class="flex items-center justify-center overflow-hidden relative text-lg font-bold text-neutral-600 transition-all duration-200">Shop</a>
+                            </li>
+                            <li>
+                                <a href="blog.html" class="navbar-active flex items-center justify-center overflow-hidden relative text-lg font-bold text-neutral-600 transition-all duration-200">Blog</a>
+                            </li>
+                            <li>
+                                <a href="about.html" class="flex items-center justify-center overflow-hidden relative text-lg font-bold text-neutral-600 transition-all duration-200">About</a>
+                            </li>
+                            <li>
+                                <a href="contact.html" class="flex items-center justify-center overflow-hidden relative text-lg font-bold text-neutral-600 transition-all duration-200">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="main-cart relative order-2 md:order-none">
+                        <button type="button" aria-label="View shopping cart" class="inline-block text-xs rounded" data-twe-toggle="tooltip" data-twe-placement="bottom" data-twe-ripple-init data-twe-ripple-color="light" title="Cart">
+                            <a href="cart.html" aria-label="View shopping cart" class="text-neutral-600 transition-all duration-200">
+                                <i class="fa-solid fa-cart-shopping text-xl sm:text-2xl"></i>
+                            </a>
+                        </button>
+                    </div>
+                    <div class="account-buttons flex items-center gap-1 lg:gap-3">
+                        <div class="signup">
+                            <a href="signup.html" class="text-md sm:text-lg font-semibold px-2 sm:px-4 rounded-full">Sign Up</a>
+                        </div>
+                        <div class="login">
+                            <a href="login.html" class="text-md sm:text-lg font-semibold text-white px-2 sm:px-4 rounded-full">Log In</a>
+                        </div>
+                        <div class="profile">
+                            <a href="profile.html" class="user-profile">
+                                <img src="Images/default-avatar.png" alt="user-image">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="menu-icon order-3 md:order-none">
+                        <button type="button" id="menu-toggle">
+                            <i class="fa-solid fa-bars text-2xl"></i>
+                        </button>
+                    </div>
+                </nav>
+            </header>
+            <main>
+                <div class="main-blog w-full flex items-center justify-center flex-col p-4">
+                    <div class="text-center">
+                        <h1 class="text-white text-5xl font-black">Read More</h1>
+                        <p class="text-white font-semibold mt-8 uppercase">Read all case studies about our products!</p>
+                    </div>
+                </div>
+            </main>
+        </section>
+        <section class="blog-section">
+            <div class="blog-content-one main-padding hidden opacity-100 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block" id="tabs-home" role="tabpanel" aria-labelledby="tabs-home-tab" data-twe-tab-active>
+                <div class="grid grid-cols-12 gap-8 pt-16 py-12 items-center">
+                    <div class="blog-img col-span-12 md:col-span-6 relative">
+                        <img src="Images/blog-1.webp" alt="blog-image" class="rounded">
+                        <div class="date-of-puplish absolute">
+                            <h2 class="text-5xl font-black text-neutral-500">01/05</h2>
+                        </div>
+                    </div>
+                    <div class="blog-text col-span-12 md:col-span-6 ml-4" id="item1">
+                        <h3 class="text-3xl text-black font-bold">The Cotton-Jersey Zip-Up Hoodie.</h3>
+                        <p class="text-lg text-neutral-500 my-4" id="blogParagraph1"></p>
+                        <button class="text-lg font-bold text-black flex items-center gap-3">
+                            SHOW MORE
+                            <i class="fa-solid fa-chevron-down" id="chevronIcon"></i>
+                        </button>
+                    </div>             
+                </div>
+                <div class="grid grid-cols-12 gap-8 pt-16 py-12 items-center">
+                    <div class="blog-img col-span-12 md:col-span-6 relative">
+                        <img src="Images/blog-2.webp" alt="blog-image" class="rounded">
+                        <div class="date-of-puplish absolute">
+                            <h2 class="text-5xl font-black text-neutral-500">29/04</h2>
+                        </div>
+                    </div>
+                    <div class="blog-text col-span-12 md:col-span-6 ml-4" id="item2">
+                        <h3 class="text-3xl text-black font-bold">How To Style a Quiff ...</h3>
+                        <p class="text-lg text-neutral-500 my-4" id="blogParagraph2"></p>
+                        <button class="text-lg font-bold text-black flex items-center gap-3">
+                            SHOW MORE
+                            <i class="fa-solid fa-chevron-down" id="chevronIcon"></i>
+                        </button>
+                    </div>             
+                </div>
+                <div class="grid grid-cols-12 gap-8 pt-16 py-12 items-center">
+                    <div class="blog-img col-span-12 md:col-span-6 relative">
+                        <img src="Images/blog-3.jpg" alt="blog-image" class="rounded">
+                        <div class="date-of-puplish absolute">
+                            <h2 class="text-5xl font-black text-neutral-500">25/04</h2>
+                        </div>
+                    </div>
+                    <div class="blog-text col-span-12 md:col-span-6 ml-4" id="item3">
+                        <h3 class="text-3xl text-black font-bold">Must-Have Skater Girl Items</h3>
+                        <p class="text-lg text-neutral-500 my-4" id="blogParagraph3"></p>
+                        <button class="text-lg font-bold text-black flex items-center gap-3">
+                            SHOW MORE
+                            <i class="fa-solid fa-chevron-down" id="chevronIcon"></i>
+                        </button>
+                    </div>             
+                </div>
+                <div class="grid grid-cols-12 gap-8 pt-16 py-12 items-center">
+                    <div class="blog-img col-span-12 md:col-span-6 relative">
+                        <img src="Images/blog-4.jpg" alt="blog-image" class="rounded">
+                        <div class="date-of-puplish absolute">
+                            <h2 class="text-5xl font-black text-neutral-500">20/04</h2>
+                        </div>
+                    </div>
+                    <div class="blog-text col-span-12 md:col-span-6 ml-4" id="item4">
+                        <h3 class="text-3xl text-black font-bold">AW20 Menswear Trends</h3>
+                        <p class="text-lg text-neutral-500 my-4" id="blogParagraph4"></p>
+                        <button class="text-lg font-bold text-black flex items-center gap-3">
+                            SHOW MORE
+                            <i class="fa-solid fa-chevron-down" id="chevronIcon"></i>
+                        </button>
+                    </div>             
+                </div>
+            </div>
+            <div class="blog-content-two main-padding hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block" id="tabs-profile" role="tabpanel" aria-labelledby="tabs-profile-tab">
+                <div class="grid grid-cols-12 gap-8 pt-16 py-12 items-center">
+                    <div class="blog-img col-span-12 md:col-span-6 relative">
+                        <img src="Images/b2.jpg" alt="blog-image" class="rounded">
+                        <div class="date-of-puplish absolute">
+                            <h2 class="text-5xl font-black text-neutral-500">16/04</h2>
+                        </div>
+                    </div>
+                    <div class="blog-text col-span-12 md:col-span-6 ml-4" id="item5">
+                        <h3 class="text-3xl text-black font-bold">Runway-Inspired Trends</h3>
+                        <p class="text-lg text-neutral-500 my-4" id="blogParagraph5"></p>
+                        <button class="text-lg font-bold text-black flex items-center gap-3">
+                            SHOW MORE
+                            <i class="fa-solid fa-chevron-down" id="chevronIcon"></i>
+                        </button>
+                    </div>     
+                </div>
+            </div>
+            <div class="tabs py-1">
+                <ul class="mb-5 flex justify-center gap-3 flex-row flex-wrap border-b-0 ps-0" role="tablist" data-twe-nav-ref>
+                    <li role="presentation">
+                        <a href="#tabs-home" class="text-white text-2xl font-semibold rounded" data-twe-toggle="pill" data-twe-target="#tabs-home" role="tab" aria-controls="tabs-home" aria-selected="true">1</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#tabs-profile" class="text-white text-2xl font-semibold rounded" data-twe-toggle="pill" data-twe-target="#tabs-profile" role="tab" aria-controls="tabs-profile" aria-selected="false">2</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="news-letter">
+            <div class="news-letter-div flex items-center flex-wrap justify-between py-16 my-8 main-padding">
+                <div class="news-letter-text">
+                    <h3 class="text-white text-4xl font-bold mb-4">Sign Up For Newsletters</h3>
+                    <p class="text-neutral-300 text-lg font-semibold">Get E-Mail Updates About Our Latest Shop And <span class="text-2xl font-bold text-yellow-500">Special Offers.</span></p>
+                </div>
+                <div class="news-letter-form">
+                    <form action="#">
+                        <input type="email" placeholder="Your Email Adderss" class="w-full h-12 px-5 border rounded outline-none text-xl">
+                        <button type="submit" class="py-3 px-6 mt-6 text-white font-bold rounded-md transition-all duration-300">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 main-padding">
+                <div>
+                    <div>
+                        <a href="#">
+                            <img src="Images/logo.png" alt="logo-image">
+                        </a>
+                    </div>
+                    <div class="mt-8">
+                        <h3 class="text-black text-2xl font-bold">Contact</h3>
+                    </div>
+                    <div>
+                        <ul class="mt-4">
+                            <li class="text-neutral-400"><span class="text-black font-bold text-lg">Address: </span> 562 Wellington, 32 San Francisco</li>
+                            <li class="text-neutral-400"><span class="text-black font-bold text-lg">Phone: </span>: +01 2222 365 | (+91) 01 2345 6789</li>
+                            <li class="text-neutral-400"><span class="text-black font-bold text-lg">Hours: </span> 10:00 - 18:00. Mon - Sat</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="mt-8">
+                        <h3 class="text-black text-2xl font-bold">About</h3>
+                    </div>
+                    <div>
+                        <ul class="mt-4 flex flex-col gap-2">
+                            <li>
+                                <a href="about.html" class="text-neutral-400 hover:text-black transition duration-100">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-neutral-400 hover:text-black transition duration-100">Delivery Information</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-neutral-400 hover:text-black transition duration-100">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-neutral-400 hover:text-black transition duration-100">Terms & Conditions</a>
+                            </li>
+                            <li>
+                                <a href="contact.html" class="text-neutral-400 hover:text-black transition duration-100">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="mt-8">
+                        <h3 class="text-black text-2xl font-bold">My Account</h3>
+                    </div>
+                    <div>
+                        <ul class="mt-4 flex flex-col gap-2">
+                            <li>
+                                <a href="signup.html" class="text-neutral-400 hover:text-black transition duration-100">Sign Up</a>
+                            </li>
+                            <li>
+                                <a href="cart.html" class="text-neutral-400 hover:text-black transition duration-100">View Cart</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-neutral-400 hover:text-black transition duration-100">My Whishlist</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-neutral-400 hover:text-black transition duration-100">Track My Order</a>
+                            </li>
+                            <li>
+                                <a href="contact.html" class="text-neutral-400 hover:text-black transition duration-100">Help</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="mt-8">
+                        <h3 class="text-black text-2xl font-bold">Install App</h3>
+                        <p class="mt-3 text-neutral-400">From App Store Or Google Play</p>
+                    </div>
+                    <div class="flex items-center gap-4 mt-3">
+                        <div class="border-2 hover:border-black transition duration-200">
+                            <a href="#">
+                                <img src="Images/app.jpg" alt="apple-store">
+                            </a>
+                        </div>
+                        <div class="border-2 hover:border-black transition duration-200">
+                            <a href="#">
+                                <img src="Images/play.jpg" alt="google-play">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <p class="text-neutral-400">Secured Payment Gateways</p>
+                        <div class="mt-3">
+                            <a href="#">
+                                <img src="Images/pay.png" alt="payment-methods">
+                           </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="follow-us-div">
+                    <div class="mt-2">
+                        <h3 class="text-black text-2xl font-bold">Follow Us</h3>
+                    </div>
+                    <div class="footer-icons flex items-center gap-3 mt-3">
+                        <a href="#">
+                            <i class="fa-brands fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-pinterest text-xl"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-youtube text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright text-center mb-4">
+                <p class="text-md md:text-lg text-neutral-400">Copyright © 2024. All rights reserved</p>
+            </div>
+        </footer>
+    </div>
+    <button class="scrollToTop"><i class="fa-solid fa-angles-up"></i></button>
+    <script src="JavaScript/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/js/tw-elements.umd.min.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const items = document.querySelectorAll(".blog-text");
+
+    items.forEach(item => {
+        const fullText = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur at, quaerat eaque praesentium error quod expedita pariatur veritatis quos odio, saepe fuga dolore. Soluta accusantium animi mollitia amet temporibus cupiditate ullam dolore laboriosam! Officiis ullam itaque tempore, provident corrupti et similique at veniam aspernatur dolore laborum veritatis porro omnis architecto doloribus, quod ut iure, in cupiditate? Repudiandae, perspiciatis molestiae. Dolores ipsam voluptatem praesentium quam, rerum dolore ducimus amet ipsa obcaecati magni.";
+        const initialText = fullText.split(' ').slice(0, 28).join(' ') + ' .....';
+        const paragraph = item.querySelector('p');
+        const button = item.querySelector('button');
+        const chevron = button.querySelector('i');
+
+        paragraph.textContent = initialText;
+        paragraph.dataset.fullText = fullText;
+        paragraph.dataset.initialText = initialText;
+
+        button.addEventListener('click', function() {
+            if (button.textContent.includes('SHOW MORE')) {
+                paragraph.textContent = paragraph.dataset.fullText;
+                button.textContent = 'SHOW LESS ';
+                chevron.className = 'fa-solid fa-chevron-up';
+            } else {
+                paragraph.textContent = paragraph.dataset.initialText;
+                button.textContent = 'SHOW MORE ';
+                chevron.className = 'fa-solid fa-chevron-down';
+            }
+            button.appendChild(chevron);
+        });
+    });
+    });
+
+    let tabs = document.querySelectorAll(".tabs li a");
+    let tabsArray = Array.from(tabs);
+
+    tabsArray.forEach((element) => {
+        element.addEventListener("click" , function (event) {
+            tabsArray.forEach((element) => {
+                element.classList.remove("active-li");
+            });
+            event.currentTarget.classList.add("active-li");
+        });
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+    const tabOne = document.querySelector('[data-twe-target="#tabs-home"]');
+    const tabTwo = document.querySelector('[data-twe-target="#tabs-profile"]');
+
+        tabOne.click(); // Activate The First Tab On Page Load
+    });
+    </script>
+</body>
+</html> 

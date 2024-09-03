@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore top-quality, fashionable apparel for men and women. Discover our exclusive deals on the latest trends at YourBrandName. Shop now!">
+    <meta name="keywords" content="men's clothing, women's clothing, fashion apparel, trendy outfits, YourBrandName">
+    <link rel="icon" href="Images/fav-icon.png"> <!-- Website Icon -->
+    <script src="https://cdn.tailwindcss.com"></script> <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/css/tw-elements.min.css"/> <!-- Tailwind Elements Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> <!-- FontAwesome Icons Import -->
+    <link rel="stylesheet" href="CSS/input.css"> <!-- Main CSS File -->
+    <title>E-Commerce</title>
+</head>
+<body>
+    <!-- Wrapper -->
+    <div class="wrapper">
+        <section class="home-section">
+            <header class="main-header w-full flex items-center justify-between fixed z-40 shadow-lg py-4 main-padding">
+                <div class="main-logo">
+                    <a href="index.html">
+                        <img src="Images/logo.png" alt="website-logo" width="140px" height="40px">
+                    </a>
+                </div>
+                <nav class="main-navbar flex items-center gap-4 lg:gap-8">
+                    <div class="navbar-div">
+                        <ul class="flex items-center gap-4 lg:gap-8 relative" id="navbar">
+                            <div class="x-mark-icon transition-all duration-200">
+                                <button type="button">
+                                    <i class="fa-solid fa-xmark text-3xl"></i>
+                                </button>
+                            </div>
+                            <li>
+                                <a href="index.html" class="flex items-center justify-center overflow-hidden relative text-lg font-bold text-neutral-600 transition-all duration-200">Home</a>
+                            </li>
+                            <li>
+                                <a href="shop.html" class="navbar-active flex items-center justify-center overflow-hidden relative text-lg font-bold text-neutral-600 transition-all duration-200">Shop</a>
+                            </li>
+                            <li>
+                                <a href="blog.html" class="flex items-center justify-center overflow-hidden relative text-lg font-bold text-neutral-600 transition-all duration-200">Blog</a>
+                            </li>
+                            <li>
+                                <a href="about.html" class="flex items-center justify-center overflow-hidden relative text-lg font-bold text-neutral-600 transition-all duration-200">About</a>
+                            </li>
+                            <li>
+                                <a href="contact.html" class="flex items-center justify-center overflow-hidden relative text-lg font-bold text-neutral-600 transition-all duration-200">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="main-cart relative order-2 md:order-none">
+                        <button type="button" aria-label="View shopping cart" class="inline-block text-xs rounded" data-twe-toggle="tooltip" data-twe-placement="bottom" data-twe-ripple-init data-twe-ripple-color="light" title="Cart">
+                            <a href="cart.html" aria-label="View shopping cart" class="text-neutral-600 transition-all duration-200">
+                                <i class="fa-solid fa-cart-shopping text-xl sm:text-2xl"></i>
+                            </a>
+                        </button>
+                    </div>
+                    <div class="account-buttons flex items-center gap-1 lg:gap-3">
+                        <div class="signup">
+                            <a href="signup.html" class="text-md sm:text-lg font-semibold px-2 sm:px-4 rounded-full">Sign Up</a>
+                        </div>
+                        <div class="login">
+                            <a href="login.html" class="text-md sm:text-lg font-semibold text-white px-2 sm:px-4 rounded-full">Log In</a>
+                        </div>
+                        <div class="profile">
+                            <a href="profile.html" class="user-profile">
+                                <img src="Images/default-avatar.png" alt="user-image">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="menu-icon order-3 md:order-none">
+                        <button type="button" id="menu-toggle">
+                            <i class="fa-solid fa-bars text-2xl"></i>
+                        </button>
+                    </div>
+                </nav>
+            </header>
+        </section>
+        <section class="product-section">
+            <div class="main-padding pt-0 md:pt-12">
+                <div class="grid grid-cols-12 gap-5">
+                    <div class="col-span-12 md:col-span-5 lg:col-span-6 xl:col-span-4 order-2 md:order-1">
+                        <div class="product-image">
+                            <img src="Images/f1.jpg" alt="product-image" id="mainImg">
+                        </div>
+                        <div class="product-models grid grid-cols-4 gap-2 mt-2">
+                            <div class="product-model-image">
+                                <img src="Images/f1.jpg" alt="product-image" class="product-model-img cursor-pointer">
+                            </div>
+                            <div class="product-model-image">
+                                <img src="Images/f2.jpg" alt="product-image" class="product-model-img cursor-pointer">
+                            </div>
+                            <div class="product-model-image">
+                                <img src="Images/f3.jpg" alt="product-image" class="product-model-img cursor-pointer">
+                            </div>
+                            <div class="product-model-image">
+                                <img src="Images/f4.jpg" alt="product-image" class="product-model-img cursor-pointer">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-12 md:col-span-7 lg:col-span-6 xl:col-span-8 order-1 md:order-2">
+                        <nav class="w-full rounded-md">
+                            <ol class="list-reset flex">
+                            <li>
+                                <a href="index.html" class="text-emerald-600 text-xl transition duration-150 ease-in-out hover:text-green-800 focus:text-primary-accent-300 active:text-primary-accent-300 motion-reduce:transition-none dark:text-primary-400">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <span class="mx-2 text-neutral-400 text-xl">/</span>
+                            </li>
+                            <li class="text-neutral-400 text-xl">
+                                Men's Fashion T-Shirt
+                            </li>
+                            </ol>
+                        </nav>
+                        <div class="mt-8">
+                            <h2 class="product-name text-3xl text-black font-bold">
+                                Men's Fashion T-Shirt
+                            </h2>
+                        </div>
+                        <div class="mt-8">
+                            <h3 class="product-price text-2xl font-bold text-black">
+                                $ 139.00
+                            </h3>
+                        </div>
+                        <div>
+                            <div class="products-select mt-3">
+                                <select name="product-size" id="productSize">
+                                    <option value="#">Select Size</option>
+                                    <option value="#">XL</option>
+                                    <option value="#">XXL</option>
+                                    <option value="#">Small</option>
+                                    <option value="#">Large</option>
+                                </select>
+                            </div>
+                            <input type="number" value="1" class="product-number mt-3">
+                            <button class="add-to-cart-button px-3 ml-4 rounded text-white transition-all duration-200" id="addToCart" onclick="addToCart(123)">Add To Cart</button>
+                        </div>
+                        <div>
+                            <div class="mt-10">
+                                <h3 class="text-black font-bold text-2xl">Product Details</h3>
+                                <p class="text-neutral-500 text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet cum placeat obcaecati error tempora, repellendus dolore dignissimos ex autem quas similique laboriosam tenetur aperiam atque eligendi saepe suscipit. Fugit sapiente autem at tempora voluptatibus impedit rem iure ducimus facilis vero.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="featured-section">
+            <div class="featured-title text-center mt-16">
+                <h1 class="text-5xl font-extrabold text-black">Featured Products</h1>
+                <p class="text-neutral-500 text-lg font-semibold pt-5">Summer Collection New Modern Design</p>
+            </div>
+            <div class="grid grid-cols-12 gap-5 my-8 main-padding" id="FeaturedContainer">
+                <!-- Content From JavaScript Will Show Here -->
+            </div>
+        </section>
+        <section class="news-letter">
+            <div class="news-letter-div flex items-center flex-wrap justify-between py-16 my-8 main-padding">
+                <div class="news-letter-text">
+                    <h3 class="text-white text-4xl font-bold mb-4">Sign Up For Newsletters</h3>
+                    <p class="text-neutral-300 text-lg font-semibold">Get E-Mail Updates About Our Latest Shop And <span class="text-2xl font-bold text-yellow-500">Special Offers.</span></p>
+                </div>
+                <div class="news-letter-form">
+                    <form action="#">
+                        <input type="email" placeholder="Your Email Adderss" class="w-full h-12 px-5 border rounded outline-none text-xl">
+                        <button type="submit" class="py-3 px-6 mt-6 text-white font-bold rounded-md transition-all duration-300">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 main-padding">
+                <div>
+                    <div>
+                        <a href="#">
+                            <img src="Images/logo.png" alt="logo-image">
+                        </a>
+                    </div>
+                    <div class="mt-8">
+                        <h3 class="text-black text-2xl font-bold">Contact</h3>
+                    </div>
+                    <div>
+                        <ul class="mt-4">
+                            <li class="text-neutral-400"><span class="text-black font-bold text-lg">Address: </span> 562 Wellington, 32 San Francisco</li>
+                            <li class="text-neutral-400"><span class="text-black font-bold text-lg">Phone: </span>: +01 2222 365 | (+91) 01 2345 6789</li>
+                            <li class="text-neutral-400"><span class="text-black font-bold text-lg">Hours: </span> 10:00 - 18:00. Mon - Sat</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="mt-8">
+                        <h3 class="text-black text-2xl font-bold">About</h3>
+                    </div>
+                    <div>
+                        <ul class="mt-4 flex flex-col gap-2">
+                            <li>
+                                <a href="about.html" class="text-neutral-400 hover:text-black transition duration-100">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-neutral-400 hover:text-black transition duration-100">Delivery Information</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-neutral-400 hover:text-black transition duration-100">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-neutral-400 hover:text-black transition duration-100">Terms & Conditions</a>
+                            </li>
+                            <li>
+                                <a href="contact.html" class="text-neutral-400 hover:text-black transition duration-100">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="mt-8">
+                        <h3 class="text-black text-2xl font-bold">My Account</h3>
+                    </div>
+                    <div>
+                        <ul class="mt-4 flex flex-col gap-2">
+                            <li>
+                                <a href="signup.html" class="text-neutral-400 hover:text-black transition duration-100">Sign Up</a>
+                            </li>
+                            <li>
+                                <a href="cart.html" class="text-neutral-400 hover:text-black transition duration-100">View Cart</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-neutral-400 hover:text-black transition duration-100">My Whishlist</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-neutral-400 hover:text-black transition duration-100">Track My Order</a>
+                            </li>
+                            <li>
+                                <a href="contact.html" class="text-neutral-400 hover:text-black transition duration-100">Help</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="mt-8">
+                        <h3 class="text-black text-2xl font-bold">Install App</h3>
+                        <p class="mt-3 text-neutral-400">From App Store Or Google Play</p>
+                    </div>
+                    <div class="flex items-center gap-4 mt-3">
+                        <div class="border-2 hover:border-black transition duration-200">
+                            <a href="#">
+                                <img src="Images/app.jpg" alt="apple-store">
+                            </a>
+                        </div>
+                        <div class="border-2 hover:border-black transition duration-200">
+                            <a href="#">
+                                <img src="Images/play.jpg" alt="google-play">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <p class="text-neutral-400">Secured Payment Gateways</p>
+                        <div class="mt-3">
+                            <a href="#">
+                                <img src="Images/pay.png" alt="payment-methods">
+                           </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="follow-us-div">
+                    <div class="mt-2">
+                        <h3 class="text-black text-2xl font-bold">Follow Us</h3>
+                    </div>
+                    <div class="footer-icons flex items-center gap-3 mt-3">
+                        <a href="#">
+                            <i class="fa-brands fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-pinterest text-xl"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-youtube text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright text-center mb-4">
+                <p class="text-md md:text-lg text-neutral-400">Copyright © 2024. All rights reserved</p>
+            </div>
+        </footer>
+    </div>
+    <button class="scrollToTop"><i class="fa-solid fa-angles-up"></i></button>
+    <script src="JavaScript/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/js/tw-elements.umd.min.js"></script>
+    <script>
+        let mainImg = document.getElementById("mainImg");
+        let smallImg = document.getElementsByClassName("product-model-img");
+
+        smallImg[0].onclick = function() {
+            mainImg.src = smallImg[0].src;
+        };
+        smallImg[1].onclick = function() {
+            mainImg.src = smallImg[1].src;
+        };
+        smallImg[2].onclick = function() {
+            mainImg.src = smallImg[2].src;
+        };
+        smallImg[3].onclick = function() {
+            mainImg.src = smallImg[3].src;
+        };
+// Featrued Products
+featruedProducts = [
+    {
+        id: 1,
+        image: "Images/f1.jpg",
+        model: "Calvin Klein",
+        name: "Cotton Linen Shirt",
+        rate: '<i class="fa-solid fa-star text-lg text-yellow-400"></i><i class="fa-solid fa-star text-lg text-yellow-400"></i> <i class="fa-solid fa-star text-lg text-yellow-400"></i> <i class="fa-solid fa-star text-lg text-yellow-400"></i> <i class="fa-solid fa-star text-lg text-yellow-400"></i>',
+        price: 80,
+    },
+    {
+        id: 2,
+        image: "Images/f2.jpg",
+        model: "Hugo Boss",
+        name: "Lightweight Chambray Shirt",
+        rate: '<i class="fa-solid fa-star text-lg text-yellow-400"></i><i class="fa-solid fa-star text-lg text-yellow-400"></i> <i class="fa-solid fa-star text-lg text-yellow-400"></i> <i class="fa-solid fa-star text-lg text-yellow-400"></i> <i class="fa-regular fa-star text-lg text-yellow-400"></i>',
+        price: 75,
+    },
+    {
+        id: 3,
+        image: "Images/f3.jpg",
+        model: "Armani Exchange",
+        name: "Poplin Stretch Shirt",
+        rate: '<i class="fa-solid fa-star text-lg text-yellow-400"></i><i class="fa-solid fa-star text-lg text-yellow-400"></i> <i class="fa-solid fa-star text-lg text-yellow-400"></i> <i class="fa-solid fa-star text-lg text-yellow-400"></i> <i class="fa-solid fa-star-half-stroke text-lg text-yellow-400"></i>',
+        price: 85,
+    },
+    {
+        id: 4,
+        image: "Images/f4.jpg",
+        model: "Zara",
+        name: "Seersucker Stripe Shirt",
+        rate: '<i class="fa-solid fa-star text-lg text-yellow-400"></i><i class="fa-solid fa-star text-lg text-yellow-400"></i> <i class="fa-solid fa-star text-lg text-yellow-400"></i> <i class="fa-solid fa-star text-lg text-yellow-400"></i> <i class="fa-regular fa-star text-lg text-yellow-400"></i>',
+        price: 120,
+    },
+    {
+        id: 5,
+        image: "Images/f5.jpg",
+        model: "Gucci",
+        name: "Floral Print Silk Shirt",
+        rate: '<i class="fa-solid fa-star text-lg text-yellow-400"></i><i class="fa-solid fa-star text-lg text-yellow-400"></i> <i class="fa-solid fa-star text-lg text-yellow-400"></i> <i class="fa-solid fa-star text-lg text-yellow-400"></i> <i class="fa-solid fa-star text-lg text-yellow-400"></i>',
+        price: 90,
+    },
+    {
+        id: 6,
+        image: "Images/f6.jpg",
+        model: "Nike",
+        name: "Burberry Cotton Shirt",
+        rate: '<i class="fa-solid fa-star text-lg text-yellow-400"></i><i class="fa-solid fa-star text-lg text-yellow-400"></i> <i class="fa-solid fa-star text-lg text-yellow-400"></i> <i class="fa-solid fa-star text-lg text-yellow-400"></i> <i class="fa-solid fa-star-half-stroke text-lg text-yellow-400"></i>',
+        price: 135,
+    },
+    {
+        id: 7,
+        image: "Images/f7.jpg",
+        model: "Levi",
+        name: "501 Original Jeans",
+        rate: '<i class="fa-solid fa-star text-lg text-yellow-400"></i><i class="fa-solid fa-star text-lg text-yellow-400"></i> <i class="fa-solid fa-star text-lg text-yellow-400"></i> <i class="fa-regular fa-star text-lg text-yellow-400"></i> <i class="fa-regular fa-star text-lg text-yellow-400"></i>',
+        price: 220,
+    },
+    {
+        id: 8,
+        image: "Images/f8.jpg",
+        model: "Astronaut",
+        name: "Cartoon Astronaut T-shirts",
+        rate: '<i class="fa-solid fa-star text-lg text-yellow-400"></i><i class="fa-solid fa-star text-lg text-yellow-400"></i> <i class="fa-solid fa-star-half-stroke text-lg text-yellow-400"></i> <i class="fa-regular fa-star text-lg text-yellow-400"></i> <i class="fa-regular fa-star text-lg text-yellow-400"></i>',
+        price: 95,
+    },
+];
+
+function addToCart(productId) {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    let found = cart.find(product => product.id === productId);
+    if (found) {
+        found.quantity += 1;
+    } else {
+        let productToAdd = featruedProducts.find(product => product.id === productId);
+        if (productToAdd) {
+            productToAdd.quantity = 1;
+            cart.push(productToAdd);
+        } else {
+            // Handle the case where productToAdd is undefined
+            console.error('Product with ID ' + productId + ' not found.');
+            return;
+        }
+    }
+    localStorage.setItem('cart', JSON.stringify(cart));
+    updateCartTotal(); // Call This FN To Update Total Price.
+    showPopup("Product Added To Your Cart");
+}
+// Show Message Popup
+function showPopup(message) {
+    const popup = document.createElement("div");
+    popup.style.position = "fixed";
+    popup.style.top = "80px";
+    popup.style.right = "20px";
+    popup.style.padding = "10px 20px";
+    popup.style.backgroundColor = "#48AE40";
+    popup.style.color = "white";
+    popup.style.borderRadius = "5px";
+    popup.style.boxShadow = "0 2px 6px rgba(0,0,0,0.2)";
+    popup.style.zIndex = "1000";
+    popup.style.display = "flex";
+    popup.style.alignItems = "center";
+    popup.style.justifyContent = "center";
+    popup.style.gap = "10px";
+
+    const icon = document.createElement("i");
+    icon.className = "fa-solid fa-check";
+    icon.style.fontSize = "1.2rem";
+
+    const text = document.createElement("span");
+    text.textContent = message;
+
+    popup.appendChild(icon);
+    popup.appendChild(text);
+
+    document.body.appendChild(popup);
+
+    // Remove the popup after 2.5 seconds
+    setTimeout(() => {
+        document.body.removeChild(popup);
+    }, 2500);
+};
+
+// Update Cart Total Price FN
+function updateCartTotal() {
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const total = cart.reduce((acc, curr) => acc + curr.price * curr.quantity, 0);
+    localStorage.setItem('totalPrice', total.toFixed(2));
+    if (document.getElementById('totalPrice')) {
+        document.getElementById('totalPrice').textContent = `$ ${total.toFixed(2)}`;
+    };
+};
+
+// Initialization for Featured Products
+document.addEventListener("DOMContentLoaded", () => {
+    let myFeaturedContainer = document.getElementById("FeaturedContainer");
+    if (myFeaturedContainer) {
+        myFeaturedContainer.innerHTML = featruedProducts.map(product => 
+        `  
+        <div class="featuerd-card relative col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-3 border border-neutral-300 shadow p-3 rounded-md">
+            <a href="product.html">
+                <div class="featuerd-card-image rounded-md">
+                    <img src="${product.image}" alt="featuerd-card-image" class="rounded-md">
+                </div>
+                <div class="featuerd-card-model pt-2">
+                    <p class="text-neutral-500 text-lg">${product.model}</p>
+                </div>
+                <div class="featuerd-card-name py-2">
+                    <h3 class="main-color text-2xl font-bold">${product.name}</h3>
+                </div>
+                <div class="featuerd-card-rate flex items-center gap-1">
+                    ${product.rate}
+                </div>
+                <div class="flex items-center justify-between">
+                    <div class="featuerd-card-price">
+                        <h4 class="main-color text-2xl font-bold">$${product.price}</h4>
+                    </div>
+                </div>
+            </a>
+            <div class="featuerd-card-cart">
+                <div class="text-2xl main-color absolute right-2 bottom-2">
+                    <button type="button" aria-label="View shopping cart" class="cart-button inline-block text-xs rounded" data-id="${product.id}" data-twe-toggle="tooltip" data-twe-placement="top" data-twe-ripple-init data-twe-ripple-color="light" title="Add To Cart">
+                        <i class="fa-solid fa-cart-shopping text-xl transition-all duration-300 px-3 py-2 bg-green-100 rounded-full"></i>
+                    </button>
+                </div>
+            </div>
+        </div> 
+        `
+        ).join("");
+
+        document.querySelectorAll(".cart-button").forEach(button => {
+            button.addEventListener("click", function() {
+                addToCart(parseInt(this.dataset.id), featruedProducts);
+            });
+        });
+}});
+
+function addToCart(productId) {
+    let productImage = document.getElementById("mainImg").src;
+    let productName = document.querySelector(".product-name").textContent;
+    let productPrice = parseFloat(document.querySelector(".product-price").textContent.replace('$', ''));
+    let productQuantity = parseInt(document.querySelector(".product-number").value);
+    let productSize = document.getElementById("productSize").value;
+
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    let existingProduct = cart.find(item => item.id === productId && item.size === productSize);
+
+    if (existingProduct) {
+        existingProduct.quantity += productQuantity;
+    } else {
+        cart.push({
+            id: productId,
+            name: productName,
+            price: productPrice,
+            image: productImage,
+            quantity: productQuantity,
+            size: productSize
+        });
+    }
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+    showPopup("Product Added to Your Cart");
+    updateCartUI();
+};
+
+    </script>
+</body>
+</html>

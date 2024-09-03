@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore top-quality, fashionable apparel for men and women. Discover our exclusive deals on the latest trends at YourBrandName. Shop now!">
+    <meta name="keywords" content="men's clothing, women's clothing, fashion apparel, trendy outfits, YourBrandName">
+    <link rel="icon" href="Images/fav-icon.png"> <!-- Website Icon -->
+    <script src="https://cdn.tailwindcss.com"></script> <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/css/tw-elements.min.css"/> <!-- Tailwind Elements Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> <!-- FontAwesome Icons Import -->
+    <link rel="stylesheet" href="CSS/input.css"> <!-- Main CSS File -->
+    <title>E-Commerce</title>
+</head>
+<body>
+    <!-- Wrapper -->
+    <div class="wrapper">
+        <section class="home-section signup-page">
+            <header class="main-header w-full flex items-center justify-between fixed z-40 shadow-lg py-4 main-padding">
+                <div class="main-logo">
+                    <a href="index.html">
+                        <img src="Images/logo.png" alt="website-logo" width="140px" height="40px">
+                    </a>
+                </div>
+                <nav class="main-navbar flex items-center gap-8">
+                    <div class="navbar-div">
+                        <ul class="flex items-center gap-8 relative" id="navbar">
+                            <div class="x-mark-icon transition-all duration-200">
+                                <button type="button">
+                                    <i class="fa-solid fa-xmark text-3xl"></i>
+                                </button>
+                            </div>
+                            <li>
+                                <a href="index.html" class="flex items-center justify-center overflow-hidden relative text-lg font-bold text-neutral-600 transition-all duration-200">Home</a>
+                            </li>
+                            <li>
+                                <a href="shop.html" class="flex items-center justify-center overflow-hidden relative text-lg font-bold text-neutral-600 transition-all duration-200">Shop</a>
+                            </li>
+                            <li>
+                                <a href="blog.html" class="flex items-center justify-center overflow-hidden relative text-lg font-bold text-neutral-600 transition-all duration-200">Blog</a>
+                            </li>
+                            <li>
+                                <a href="about.html" class="flex items-center justify-center overflow-hidden relative text-lg font-bold text-neutral-600 transition-all duration-200">About</a>
+                            </li>
+                            <li>
+                                <a href="contact.html" class="flex items-center justify-center overflow-hidden relative text-lg font-bold text-neutral-600 transition-all duration-200">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="main-cart relative order-2 md:order-none">
+                        <button type="button" aria-label="View shopping cart" class="inline-block text-xs rounded" data-twe-toggle="tooltip" data-twe-placement="bottom" data-twe-ripple-init data-twe-ripple-color="light" title="Cart">
+                            <a href="cart.html" aria-label="View shopping cart" class="text-neutral-600 transition-all duration-200">
+                                <i class="fa-solid fa-cart-shopping text-xl sm:text-2xl"></i>
+                            </a>
+                        </button>
+                    </div>
+                    <div class="account-buttons flex items-center gap-2">
+                        <div class="signup">
+                            <a href="signup.html" class="text-md sm:text-lg font-semibold px-2 sm:px-4 rounded-full">Sign Up</a>
+                        </div>
+                        <div class="login">
+                            <a href="login.html" class="text-md sm:text-lg font-semibold text-white px-2 sm:px-4 rounded-full">Log In</a>
+                        </div>
+                    </div>
+                    <div class="menu-icon order-3 md:order-none">
+                        <button type="button" id="menu-toggle">
+                            <i class="fa-solid fa-bars text-2xl"></i>
+                        </button>
+                    </div>
+                </nav>
+            </header>
+            <main class="user-profile">
+                <h2 class="text-3xl font-bold text-black pt-24 main-padding">Profile</h2>
+                <div class="w-full grid grid-cols-12 gap-5 main-padding">
+                    <div class="col-span-12 md:col-span-3">
+                        <div class="mt-4 bg-white border border-gray-300 rounded">
+                            <h2 class="border-b border-gray-300 p-2 text-xl font-semibold text-black">Profile Settings</h2>
+                            <ul class="ul-tabs flex flex-col flex-wrap" role="tablist" data-twe-nav-ref>
+                                <li role="presentation" class="flex-grow flex"><a href="#tabs-home03" class="tab-link active-li-tap w-full p-3 text-lg font-semibold focus:isolate focus:border-transparent data-[twe-nav-active]:border-primary data-[twe-nav-active]:text-primary" data-twe-toggle="pill" data-twe-target="#tabs-home03" data-twe-nav-active role="tab" aria-controls="tabs-home03" aria-selected="true">Account</a></li>
+                                <li role="presentation" class="flex-grow flex"><a href="#tabs-profile03" class="tab-link focus:isolate w-full p-3 text-lg font-semibold focus:border-transparent data-[twe-nav-active]:border-primary data-[twe-nav-active]:text-primary" data-twe-toggle="pill" data-twe-target="#tabs-profile03" role="tab" aria-controls="tabs-profile03" aria-selected="false">Password</a></li>
+                                <li role="presentation" class="flex-grow flex"><a href="#tabs-messages03" class="tab-link last-link focus:isolate w-full p-3 text-lg font-semibold focus:border-transparent data-[twe-nav-active]:border-primary data-[twe-nav-active]:text-primary" data-twe-toggle="pill" data-twe-target="#tabs-messages03" role="tab" aria-controls="tabs-messages03" aria-selected="false">Delete Account</a></li>
+                            </ul>     
+                        </div>                                    
+                    </div>
+                    <div class="col-span-12 md:col-span-9 mb-5 md:mb-0">
+                        <div class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block mt-4" id="tabs-home03" role="tabpanel" aria-labelledby="tabs-home-tab03" data-twe-tab-active>
+                            <div class="bg-white shadow rounded-lg">
+                                <div class="px-4 py-5">
+                                    <h5 class="text-xl leading-6 font-semibold text-gray-900">Public info</h5>
+                                </div>
+                                <div class="border-t border-gray-300">
+                                    <form class="px-4 py-5">
+                                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                            <div class="md:col-span-2">
+                                                <div class="mb-4">
+                                                    <label class="block text-sm font-medium text-gray-700" for="inputUsername">Name</label>
+                                                    <input type="text" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-emerald-600 sm:text-sm" id="inputUsername" placeholder="Edit Your Name">
+                                                </div>
+                                                <div class="mb-4">
+                                                    <label class="block text-sm font-medium text-gray-700" for="inputEmail">Email</label>
+                                                    <input rows="2" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-emerald-600 sm:text-sm resize-none" id="inputBio" placeholder="Edit Your Email"><input>
+                                                </div>
+                                            </div>
+                                            <div class="md:col-span-1">
+                                                <div class="text-center pb-3">
+                                                    <div class="flex flex-col items-center justify-center p-5">
+                                                        <img id="profileImage" alt="Charles Hall" src="Images/default-avatar.png" class="rounded-full w-32 h-32 mb-5">
+                                                    
+                                                        <input type="file" id="imageInput" class="hidden" accept="image/*" onchange="previewImage();">
+                                                        <label for="imageInput" class="upload-button inline-block px-3 py-2 rounded text-white cursor-pointer transition-all duration-20">
+                                                            Upload Image <i class="fa-solid fa-upload ml-2"></i>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="save-changes inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white focus:outline-none focus:ring-2 focus:ring-offset-2">Save changes</button>
+                                    </form>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block mt-4" id="tabs-profile03" role="tabpanel" aria-labelledby="tabs-profile-tab03">
+                            <div class="bg-white shadow rounded-lg">
+                                <div class="px-4 py-5">
+                                    <h5 class="text-lg font-medium leading-6 text-gray-900">Password</h5>
+                                </div>
+                                <div class="border-t border-gray-200">
+                                    <form class="px-4 py-5">
+                                        <div class="mb-4">
+                                            <label class="block text-sm font-medium text-gray-700" for="inputPasswordCurrent">Current password</label>
+                                            <input type="password" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-emerald-600 sm:text-sm" id="inputPasswordCurrent">
+                                            <div class="mt-2">
+                                                <a href="forgot-password.html" class="text-sm text-gray-500 hover:text-gray-800 hover:underline">Forgot your password?</a>
+                                            </div>
+                                        </div>
+                                        <div class="mb-4">
+                                            <label class="block text-sm font-medium text-gray-700" for="inputPasswordNew">New password</label>
+                                            <input type="password" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-emerald-600 sm:text-sm" id="inputPasswordNew">
+                                        </div>
+                                        <div class="mb-4">
+                                            <label class="block text-sm font-medium text-gray-700" for="inputPasswordNew2">Verify password</label>
+                                            <input type="password" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-emerald-600 sm:text-sm" id="inputPasswordNew2">
+                                        </div>
+                                        <button type="submit" class="save-changes inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white focus:outline-none focus:ring-2 focus:ring-offset-2">Save changes</button>
+                                    </form>
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block mt-4" id="tabs-messages03" role="tabpanel" aria-labelledby="tabs-profile-tab03">
+                            <div class="bg-white shadow rounded-lg">
+                                <div class="p-5">
+                                    <h5 class="text-xl font-semibold leading-6 text-gray-900 mb-4">Delete Account</h5>
+                                    <h5 class="text-center font-medium text-gray-900">Are You Sure You Want To Delete Your Account Permanently?</h5>
+                                    <p class="text-center text-gray-500 mt-2">Press "Delete Account" to remove it permanently, or "Cancel" if you want to keep your benefits.</p>
+                                    <div class="flex justify-center space-x-4 mt-5">
+                                        <button type="submit" class="px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">Delete Account</button>
+                                        <button type="submit" class="px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>                             
+                    </div> 
+                </div>
+            </main>
+        </section>
+    </div>
+    <button class="scrollToTop"><i class="fa-solid fa-angles-up"></i></button>
+    <script src="JavaScript/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/js/tw-elements.umd.min.js"></script>
+    <script>
+        document.querySelectorAll('.tab-link').forEach(function(tab) {
+    tab.addEventListener('click', function() {
+        // Remove active class from all tabs
+        document.querySelectorAll('.tab-link').forEach(function(tab) {
+            tab.classList.remove('active-li-tap');
+            tab.setAttribute('aria-selected', 'false');
+        });
+
+        // Add active class to the clicked tab
+        this.classList.add('active-li-tap');
+        this.setAttribute('aria-selected', 'true');
+    });
+});
+
+function previewImage() {
+    const file = document.getElementById('imageInput').files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        const imgElement = document.getElementById('profileImage');
+        imgElement.src = e.target.result;
+      };
+      reader.readAsDataURL(file);
+    }
+  }
+    </script>    
+</body>
+</html>
